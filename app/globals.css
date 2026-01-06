@@ -32,3 +32,41 @@ body {
 
   --card-bg: #efe6d8;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 0px 1000px rgba(14,42,58,0.6);
+}
+
+/* ===============================
+   Custom Scrollbar (Webkit)
+================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e2a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #efe6d8,
+    #cfc4b3
+  );
+  border-radius: 999px;
+  border: 2px solid #0e2a3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #f3ede3,
+    #d8ccb8
+  );
+}
